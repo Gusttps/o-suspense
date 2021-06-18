@@ -4,3 +4,21 @@ $white: #FFFFFF;
 $light-dark-white: #FBFBFB;
 $black: #141414;
 $red: #c72a2a;
+
+/* Red Button */
+.red-bttn {
+    padding: .4rem 1rem;
+    border-radius: 2rem;
+    background-color: $red;
+    outline: none;
+    border: 2px solid $red;
+    color: $light-dark-white;
+    font-size: 1rem;
+    transition: all .3s ease-in-out;
+    cursor: pointer;
+
+    &:hover {
+        color: $red;
+        background-color: $light-dark-white;
+    }
+}
