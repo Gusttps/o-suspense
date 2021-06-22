@@ -1,4 +1,4 @@
-@import './variables/variables', './sections/header.scss';
+@import './variables/variables', './sections/header', './sections/hero';
 
 html {
     box-sizing: border-box;
@@ -12,6 +12,10 @@ body {
     background-image: url(../images/header-background.png);
     background-size: 26rem;
     background-repeat: no-repeat;
+
+    @media only screen and (max-width: 60rem) {
+        background-image: none;
+    }
     /* font-family: 'Mate SC', serif; */
 }
 
@@ -22,5 +26,9 @@ body {
     text-decoration: none;
     color: $black;
     list-style: none;
+}
+
+a, button {
+    cursor: pointer;
 }
 

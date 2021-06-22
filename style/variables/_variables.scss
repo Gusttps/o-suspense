@@ -2,12 +2,18 @@
 
 $white: #FFFFFF;
 $light-dark-white: #FBFBFB;
+$gray: #a2a2a2;
+$dark-gray: #787878;
 $black: #141414;
 $red: #c72a2a;
 
+
+// media query
+$mobile: 79rem;
+
 /* Red Button */
 .red-bttn {
-    padding: .4rem 1rem;
+    padding: .35rem 1rem;
     border-radius: 2rem;
     background-color: $red;
     outline: none;
