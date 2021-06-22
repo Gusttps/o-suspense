@@ -20,7 +20,7 @@ export const books = [{
     "id": "4",
     "month": "Livro de Abril",
     "author": "url(./images/stephen-king.jpg)",
-    "url": "url./images/it-a-coisa.jpg)"
+    "url": "url(./images/it-a-coisa.jpg)"
 },
 {
     "id": "5",
