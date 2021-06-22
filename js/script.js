@@ -14,8 +14,13 @@ const ChangeBook = (_ => {
 
     //load current book
     const init = _ => {
+        books.forEach(item => {
+            $book.style.backgroundImage = item.url;
+            $author.style.backgroundImage = item.author;
+        })
         showBook(currentBook);
         listeners();
+
     }
 
     // listeners
