@@ -1,0 +1,86 @@
+@import '../variables/variables';
+
+.presentation {
+    &__title-container {
+        width: fit-content;
+        margin: 8rem 9rem 2rem 9rem;
+        font-family: 'Mate SC', serif;
+        line-height: 1;
+
+        @media only screen and (min-width: $mobile) {
+            margin: 9rem 0 2rem 9rem;
+            width: fit-content;
+            padding-left: 6.5rem;
+        }
+        h2 {
+            font-size: 2.5rem;
+            font-weight: 300;
+        }
+        p {
+            font-size: 1.4rem;
+            font-weight: 500;
+            color: $light-gray;
+            margin-bottom: .5rem;
+        }
+        img {
+            position: relative;
+            z-index: -1;
+            margin: -10rem 0 3rem -3rem;
+            width: 6.5rem;
+
+            @media only screen and (min-width: $mobile) {
+                margin: -6rem 0 3rem -3rem;
+            }
+        }
+    }
+
+    &__cards-container {
+        display: flex;
+        flex-direction: column;
+        max-width: fit-content;
+        margin: auto;
+        text-align: center;
+        
+        @media only screen and (min-width: $mobile) {
+            display: flex;
+            flex-direction: row;
+            flex-wrap: wrap;
+            align-items: center;
+            justify-content: center;
+            margin: 0 auto;
+        }
+    }
+
+    &__cards-wrapper {
+        display: flex;
+        flex-direction: column;
+
+        @media only screen and (min-width: $mobile) {
+            display: flex;
+            flex-direction: row;
+        }
+    }
+
+    &__card {
+        width: 18rem;
+
+        @media only screen and (min-width: $mobile) {
+            height: fit-content;
+            margin: 0rem .5rem;
+        }
+
+        h3 {
+            font-family: 'Mate SC', serif;
+            font-size: 1.9rem;
+            font-weight: 400;
+        }
+        p {
+            color: $gray;
+            font-size: 1.4rem;
+            font-weight: 300;
+            width: 14rem;
+            text-align: center;
+            margin: .5rem auto 4rem auto;
+        }
+    }
+}

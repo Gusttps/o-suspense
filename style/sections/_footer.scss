@@ -1,0 +1,68 @@
+@import '../variables/variables';
+
+.footer {
+    width: 100%;
+    height: 13rem;
+    background-color: $black;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    padding: 0 4rem;
+
+    @media only screen and (max-width: $mobile) {
+        flex-direction: column;
+        height: fit-content;
+        padding: 3rem;
+    }
+    
+    &__logo-container {
+        font-size: 2rem;
+        font-weight: 700;
+        font-style: italic;
+        color: $light-dark-white;
+    }
+
+    &__items-container {
+        width: 20rem;
+        display: flex;
+        justify-content: space-around;
+
+        @media only screen and (max-width: $mobile) {
+            flex-direction: column;
+            text-align: center;
+            margin: 2rem 0;
+        }
+    }
+
+    &__item {
+        display: flex;
+        flex-direction: column;
+        @media only screen and (max-width: $mobile) {
+            margin: 1rem 0;
+        }
+        h3 {
+            color: $white;
+            font-size: 1.4rem;
+            font-weight: 400;
+            cursor: default;
+        }
+        a {
+            color: $white;
+            font-size: 1.1rem;
+            font-weight: 300;
+            margin: .3rem 0;
+            transition: all .2s ease-in-out;
+
+            &:hover {
+                color: $gray;
+            }
+        }
+    }
+
+    &__social-media {
+        img {
+            cursor: pointer;
+            margin: 0 .3rem;
+        }
+    }
+}

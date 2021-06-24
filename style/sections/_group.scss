@@ -1,0 +1,26 @@
+@import '../variables/variables';
+
+.group {
+    text-align: center;
+    padding: 4rem 0;
+
+    p {
+        font-size: 1.8rem;
+        color: $gray;
+    }
+    h1 {
+        font-size: 3.2rem;
+        color: $red;
+        margin: .2rem 0 1rem 0;
+        font-weight: 500;
+
+        @media only screen and (min-width: $mobile) {
+            max-width: 30rem;
+            margin: 0 auto .6rem auto;
+            font-size: 3.5rem;
+        }
+    }
+    button {
+        font-size: 1.3rem;
+    }
+}

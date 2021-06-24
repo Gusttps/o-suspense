@@ -1,4 +1,4 @@
-@import './variables/variables', './sections/header', './sections/hero';
+@import './variables/variables', './sections/header', './sections/hero', './sections/presentation', './sections/join', './sections/newsletter', './sections/group', './sections/footer';
 
 html {
     box-sizing: border-box;
@@ -6,17 +6,16 @@ html {
 
 body {
     box-sizing: border-box;
-    background-color: $light-dark-white;
+    background-color: $white;
     font-family: 'Lato', sans-serif;
     color: $black;
     background-image: url(../images/header-background.png);
     background-size: 26rem;
     background-repeat: no-repeat;
 
-    @media only screen and (max-width: 60rem) {
+    @media only screen and (max-width: $mobile) {
         background-image: none;
     }
-    /* font-family: 'Mate SC', serif; */
 }
 
 *, a, ::before, ::after {
